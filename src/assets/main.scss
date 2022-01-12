@@ -1,0 +1,78 @@
+@import "./reset.css";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400&display=swap");
+
+body {
+  font-family: "Noto Sans JP", sans-serif;
+  padding: 16px 25px;
+  text-align: center;
+}
+label {
+  font-size: 15px;
+  display: inline-block;
+  margin-bottom: 12px;
+}
+input {
+  display: inline-block;
+  font-size: 18px;
+  padding: 12px;
+  margin-bottom: 25px;
+  width: 100%;
+  user-select: none !important;
+  &[type='checkbox'] {
+    border-radius: 100%;
+    display: inline;
+    width: auto;
+    margin: 0;
+    margin-right: 5px;
+    line-height: 1;
+    cursor: pointer;
+    padding: 0;
+    vertical-align: middle;
+   }
+   &[type='radio'] {
+    display: inline-block;
+    width: auto;
+    margin-right: 5px;
+   }
+}
+
+.alertText{
+  position: absolute;
+  color: red;
+}
+.bg {
+  background-image: url("bg.jpg");
+  background-size: 100%;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: -99999;
+}
+.container {
+  max-width: 360px;
+  margin: auto;
+}
+p {
+  font-size: 18px;
+}
+h1 {
+  font-size: 25px;
+  margin-bottom: 35px;
+}
+
+.alignLeft{
+  text-align: left;
+}
+
+.alignRight{
+  text-align: right;
+}
+.alignCenter{
+  text-align: center;
+}
+
+.fontBold{
+  font-weight: bold;
+}

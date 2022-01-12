@@ -1,16 +1,28 @@
 <template>
-  <h1>人類社会のすべての構成員の固有の尊厳と平等で譲ることのできない権利とを承認することは</h1>
-  <p>
-      人類社会のすべての構成員の固有の尊厳と平等で譲ることのできない権利とを承認することは
-  </p>
+  <Logo :fullLogo="true" />
+  <p>{{ $t("welcome") }}</p>
+  <h1>{{ $t("online_exhi") }}</h1>
+  <router-link to="/login">
+    <BaseButton theme="yellow" :text="$t('entry')" />
+  </router-link>
 </template>
 
 <script>
+import BaseButton from "../components/BaseButton.vue";
+import Logo from "../components/Logo.vue";
+
 export default {
-    name: "Home",
-}
+  name: "Home",
+  components: {
+    BaseButton,
+    Logo,
+  },
+};
 </script>
 
-<style>
-
+<style lang="scss" scpoe>
+p,
+h1 {
+  text-align: center;
+}
 </style>

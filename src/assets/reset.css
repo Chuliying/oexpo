@@ -7,7 +7,7 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
- @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400&display=swap');
+ 
 
 
 html {
@@ -30,8 +30,6 @@ html {
 
 body {
     margin: 0;
-    font-family: 'Noto Sans JP', sans-serif;
-    text-align: center;
 }
 
 a {
